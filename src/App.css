@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0e18cb, #8f94fb);
+  color: #080606;
+  padding: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.win-message {
+  font-size: 1.5rem;
+  color: #a2cb0fd2;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.button-container {
+  display: flex;
+  gap: 550px;
+  align-items: center;
+  
+}
+
+.info-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0 10px;
+}
