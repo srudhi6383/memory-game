@@ -69,7 +69,6 @@ yarn install
 5. **Win the Game**: Once all pairs are matched, a message displays the final time and moves taken.
 
 ### Additional Information
-- **Responsive Design**: The app layout adjusts to various screen sizes.
 - **Restart Button**: Allows players to reset the game at any time.
 - **End Game Summary**: Shows your final time and move count when you complete the game.
 Difficulty Level Adjustment: Adjusts the number of pairs to match, making it suitable for various skill levels.
