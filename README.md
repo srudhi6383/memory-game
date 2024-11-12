@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Memory Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A classic memory-matching game built with React and Material UI. This game allows players to test their memory skills by matching pairs of cards within a set grid size. It also tracks the time taken, moves, and number of matched pairs.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Adjustable Difficulty**: Choose easy, medium, or hard levels to set the grid size and card pairs.
+- **Start and Restart Options**: Start the game with a dedicated button that begins the timer, or restart at any time to reset the board and timer.
+- **Move Counter and Timer**: Track the number of moves and elapsed time while playing.
+- **Win Screen**: Get feedback on your performance with a summary of moves and time taken when you complete the game.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- **Node.js** (version 14 or higher)
+- **npm** or **yarn** package manager
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Steps to Run Locally
 
-### `npm run build`
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/srudhi6383/memory-game.git
+   ```
+2. **Navigate to the Project Directory**:
+    ```bash
+      cd memory-game
+    ```
+3. **Install Dependencies: Use npm**:
+      ```bash
+        npm install
+      ```
+     Or, if you prefer yarn:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+     ```bash
+      yarn install
+     ```
+4. **Start the Development Server**:
+     ```bash
+       npm start
+     ```
+      Or with yarn:
+      ```bash
+      yarn start
+      ```
+5. **Open the Application**: Open your browser and go to ```http://localhost:3000``` to play the game.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dependencies
+- **React**: JavaScript library for building the user interface.
+- **Material UI**: For styling components with a modern UI design.
+- **@emotion/react** and **@emotion/styled**: Required by Material UI for styling support.
+- **react-dom**: Provides DOM-specific methods used at the application's entry point.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install all dependencies, run:
+```bash
+npm install
+```
+or
+```bash
+yarn install
+```
 
-### `npm run eject`
+### How to Play
+1. **Select Difficulty**: Choose a difficulty level (Easy, Medium, Hard) that sets the grid size.
+2. **Click Start**: Press the "Start Game" button to begin and start the timer.
+3. **Match Cards**: Click on two cards to flip them. If they match, they stay flipped. If not, they flip back after a short delay.
+4. **Track Your Progress**: The number of moves and time elapsed are shown on the screen.
+5. **Win the Game**: Once all pairs are matched, a message displays the final time and moves taken.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Additional Information
+- **Responsive Design**: The app layout adjusts to various screen sizes.
+- **Restart Button**: Allows players to reset the game at any time.
+- **End Game Summary**: Shows your final time and move count when you complete the game.
+Difficulty Level Adjustment: Adjusts the number of pairs to match, making it suitable for various skill levels.
