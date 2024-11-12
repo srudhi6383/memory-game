@@ -145,13 +145,18 @@ function App() {
             <Typography variant="body1">Time: {time}s</Typography>
             <Typography variant="body1">Matches: {matchedPairs}</Typography>
           </Box>
-          <Grid2 container spacing={2} justifyContent="center" style={{ gridTemplateColumns: `repeat(${difficulty}, 1fr)` }}>
-            {cards.map(card => (
-              <Grid2 item xs={12 / difficulty} key={card.id}>
-                <Card card={card} onClick={() => handleCardClick(card.id)} />
-              </Grid2>
-            ))}
-          </Grid2>
+          <Grid2
+            container
+            spacing={1}
+            justifyContent="center"
+            style={{ gridTemplateColumns: `repeat(${Math.min(difficulty, 4)}, 1fr)` }}
+            >
+            {cards.map((card) => (
+            <Grid2 item xs={6} sm={4} md={3} key={card.id}>
+            <Card card={card} onClick={() => handleCardClick(card.id)} />
+            </Grid2>
+             ))}
+            </Grid2>
         </>
       )}
 

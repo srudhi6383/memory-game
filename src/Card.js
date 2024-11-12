@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card as MUICard, CardContent, Typography } from '@mui/material';
-import './Card.css';
+import './App.css';
 
 const Card = ({ card, onClick }) => (
   <MUICard onClick={onClick} className={`card ${card.isFlipped || card.isMatched ? 'flipped' : ''}`}>
